@@ -1,0 +1,39 @@
+<html>
+<script>
+function	fizzPrint( msg )
+{
+	console.log( msg );
+	document.write( msg + "<br />" );
+
+}
+
+function	fizzBuzz()
+{
+	for( i = 1; i <= 100; i++ )
+	{
+		if( 0 === (i % 3) && 0 === (i % 5) )
+		{
+			fizzPrint( "Fizz-Buzz" );
+		}
+		else if( 0 === (i % 3) )
+		{
+			fizzPrint( "Fizz" );
+		}
+		else if( 0 === (i % 5) )
+		{
+			fizzPrint( "Buzz" );
+		}
+		else
+		{
+			fizzPrint( i );
+		}
+	}
+}
+
+fizzBuzz();
+
+</script>
+
+
+
+</html>
